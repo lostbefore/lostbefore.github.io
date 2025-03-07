@@ -1,41 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaojie SUN - Portfolio</title>
+    <title>LostBefore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script defer src="assets/js/script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Shaojie SUN</h1>
-        <p class="tagline">Software Engineering | Tongji University</p>
-        
-        <div class="section">
-            <h2>💻 Tech Stack & Interests</h2>
-            <div class="tech">
-                <span>Vue.js</span>
-                <span>Node.js</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>TypeScript</span>
-                <span>Python</span>
-                <span>C</span>
-                <span>C++</span>
-                <span>Java</span>
-                <span>Swift</span>
-                <span>Unity</span>
-                <span>Cocos2d-x</span>
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">LostBefore HomePage</div>
+            <div class="social-links">
+                <a href="https://github.com/lostbefore" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://space.bilibili.com/291935867?spm_id_from=333.337.0.0" target="_blank"><i class="fab fa-bilibili"></i></a>
             </div>
         </div>
-        
-        <div class="section contact">
-            <h2>📫 Contact</h2>
-            <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
-            <a href="mailto:YOUR_EMAIL">Email</a>
+    </nav>
+
+    <header>
+        <div class="container">
+            <img src="assets/image/avatar.jpg" alt="头像" class="avatar">
+            <h1>孙少杰</h1>
+            <p>同济大学软件工程|大三在读</p>
         </div>
-    </div>
+    </header>
+
+    <main class="container">
+        <section class="skills-section">
+            <!-- 编程语言 -->
+            <div class="skill-card">
+                <h2 class="skill-category"><i class="fas fa-laptop-code"></i> 编程语言</h2>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-cuttlefish"></i></div>
+                    <div>
+                        <h3>C/C++</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <div>
+                        <h3>Python</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-swift"></i></div>
+                    <div>
+                        <h3>Swift</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 86%"></div></div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- 前端开发 -->
+            <div class="skill-card">
+                <h2 class="skill-category"><i class="fab fa-html5"></i> 前端开发</h2>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <div>
+                        <h3>HTML</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 88%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <div>
+                        <h3>CSS</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <div>
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 87%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                    <div>
+                        <h3>Vue.js</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 83%"></div></div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- 游戏开发 -->
+            <div class="skill-card">
+                <h2 class="skill-category"><i class="fas fa-gamepad"></i> 游戏开发</h2>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-dragon"></i></div>
+                    <div>
+                        <h3>Cocos2d-x</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 82%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-cube"></i></div>
+                    <div>
+                        <h3>Unity</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                </div>
+            </div>
+    
+           
+        </section>
+    </main>
+
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
