@@ -26,3 +26,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 200 * index);
     });
 });
+
+// 初始化 CodeMirror
+var editor = CodeMirror.fromTextArea(document.getElementById("code-editor"), {
+    mode: "htmlmixed",  // 支持 HTML、CSS、JavaScript
+    theme: "material-darker",  // 黑色主题
+    lineNumbers: true,  // 显示行号
+    autoCloseBrackets: true,  // 自动补全括号
+    matchBrackets: true
+});
+
+// 运行代码按钮
+document.getElementById("run-code").addEventListener("click", function () {
+    var code = editor.getValue();
+    var iframe = document.getElementById("output");
+    iframe.contentDocument.open();
+    iframe.contentDocument.write(code);
+    iframe.contentDocument.close();
+});

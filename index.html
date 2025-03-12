@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LostBefore</title>
+    <title>LostBefore Home(建设中)</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/monokai.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/codemirror.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/edit/closebrackets.min.js"></script>
+    <script src="assets/js/codemirror-init.js"></script>
     <!-- 网站图标 -->
 <link rel="icon" href="assets/image/eden.ico" type="image/x-icon">
 <link rel="shortcut icon" href="assets/image/eden.ico" type="image/x-icon">
@@ -20,7 +29,7 @@
 <body>
     <nav>
         <div class="container nav-content">
-            <div class="logo">LostBefore HomePage</div>
+            <div class="logo">LostBefore HomePage(建设中)</div>
             <div class="social-links">
                 <a href="https://github.com/lostbefore" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://space.bilibili.com/291935867?spm_id_from=333.337.0.0" target="_blank"><i class="fab fa-bilibili"></i></a>
@@ -118,9 +127,27 @@
     
            
         </section>
+
+        <!-- 代码编辑器 -->
+        <section class="code-editor-section">
+            <h2><i class="fas fa-code"></i> 在线代码编辑器</h2>
+            <label for="language-select">选择语言：</label>
+            <select id="language-select">
+              <option value="javascript">JavaScript</option>
+              <option value="htmlmixed">HTML</option>
+              <option value="css">CSS</option>
+              <option value="python">Python</option>
+              <option value="java">Java</option>
+              <option value="c">C</option>
+              <option value="cpp">C++</option>
+            </select>
+            <textarea id="code-editor"></textarea>
+            <button id="run-code">运行代码</button>
+            <iframe id="output"></iframe>
+        </section>
     </main>
 
-
+    
     <script src="assets/js/script.js"></script>
 </body>
 </html>

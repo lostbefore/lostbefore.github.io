@@ -66,8 +66,8 @@ header {
     padding: 80px 0;
     background: linear-gradient(
         45deg, 
-        rgba(30, 41, 59, 0.6),  /* 原#1e293b 添加透明度 */
-        rgba(15, 23, 42, 0.7)    /* 原#0f172a 添加透明度 */
+        rgba(30, 41, 59, 0),  /* 原#1e293b 添加透明度 */
+        rgba(15, 23, 42, 0)    /* 原#0f172a 添加透明度 */
     );
     backdrop-filter: blur(10px);  /* 添加毛玻璃效果 */
     -webkit-backdrop-filter: blur(10px); /* 兼容Safari */
